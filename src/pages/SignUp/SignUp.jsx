@@ -2,7 +2,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -14,11 +14,11 @@ const SignUp = () => {
     register,
     handleSubmit,
     watch,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm();
 
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);
@@ -29,29 +29,29 @@ const SignUp = () => {
       console.log(loggedUser);
 
       updateUserProfile(name, photoURL)
-        // .then(() => {
-        //   const saveUser = { name: name, email: email };
-        //   fetch("https://language-safari-server.vercel.app/users", {
-        //     method: "POST",
-        //     headers: {
-        //       "content-type": "application/json",
-        //     },
-        //     body: JSON.stringify(saveUser),
-        //   })
-        //     .then((res) => res.json())
-        //     .then((data) => {
-        //       if (data.insertedId) {
-        //         Swal.fire({
-        //           title: "Congratulations!",
-        //           text: "User Created Successfully.",
-        //           icon: "success",
-        //           confirmButtonText: "Cool",
-        //         });
-        //         reset();
-        //         navigate("/");
-        //       }
-        //     });
-        // })
+        .then(() => {
+          const saveUser = { name: name, email: email };
+          fetch("https://campus-reserve.vercel.app/users", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(saveUser),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.insertedId) {
+                Swal.fire({
+                  title: "Congratulations!",
+                  text: "User Created Successfully.",
+                  icon: "success",
+                  confirmButtonText: "Cool",
+                });
+                reset();
+                navigate("/login");
+              }
+            });
+        })
         .catch((error) => {
           const errorMessage = error.message;
           Swal.fire({
