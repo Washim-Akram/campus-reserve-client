@@ -1,0 +1,84 @@
+[
+  {
+    "college_image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "college_name": "ABC University",
+    "admission_dates": ["2023-08-15", "2023-09-20", "2023-10-25"],
+    "events": ["Orientation Day", "Alumni Homecoming", "Career Fair"],
+    "research_history": {
+      "founded_year": 1965,
+      "research_areas": ["Science", "Engineering", "Medicine"],
+      "number_of_researches": 500
+    },
+    "sports": ["Football", "Basketball", "Swimming"],
+    "college_rating": 4.5
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "college_name": "XYZ College",
+    "admission_dates": ["2023-09-01", "2023-10-01", "2023-11-01"],
+    "events": ["Freshman Welcome", "Cultural Festival", "Science Exhibition"],
+    "research_history": {
+      "founded_year": 1978,
+      "research_areas": ["Arts", "Social Sciences", "Technology"],
+      "number_of_researches": 350
+    },
+    "sports": ["Tennis", "Soccer", "Track and Field"],
+    "college_rating": 4.2
+  },
+  {
+    "college_image": "https://media.istockphoto.com/id/173598452/photo/university-in-autumn.jpg?s=612x612&w=0&k=20&c=jQqpZuTZ6qXIfWqnCW5nqlExJZO0PO47L-ZiaE8jIk0=",
+    "college_name": "PQR Institute",
+    "admission_dates": ["2023-08-20", "2023-09-25", "2023-10-30"],
+    "events": ["Annual Fest", "Leadership Summit", "Research Symposium"],
+    "research_history": {
+      "founded_year": 1990,
+      "research_areas": ["Business", "Education", "Environmental Studies"],
+      "number_of_researches": 250
+    },
+    "sports": ["Volleyball", "Badminton", "Rugby"],
+    "college_rating": 4.8
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "college_name": "LMN College of Arts",
+    "admission_dates": ["2023-08-10", "2023-09-15", "2023-10-20"],
+    "events": ["Art Exhibition", "Literary Fest", "Drama Club Performance"],
+    "research_history": {
+      "founded_year": 1950,
+      "research_areas": ["Fine Arts", "Literature", "Performing Arts"],
+      "number_of_researches": 150
+    },
+    "sports": ["Cricket", "Table Tennis", "Chess"],
+    "college_rating": 4.0
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "college_name": "EFG Engineering Institute",
+    "admission_dates": ["2023-09-05", "2023-10-10", "2023-11-15"],
+    "events": ["Tech Fest", "Robotics Competition", "Industry Symposium"],
+    "research_history": {
+      "founded_year": 1985,
+      "research_areas": [
+        "Mechanical Engineering",
+        "Electrical Engineering",
+        "Computer Science"
+      ],
+      "number_of_researches": 400
+    },
+    "sports": ["Hockey", "Athletics", "Gymnastics"],
+    "college_rating": 4.6
+  },
+  {
+    "college_image": "https://media.istockphoto.com/id/173598452/photo/university-in-autumn.jpg?s=612x612&w=0&k=20&c=jQqpZuTZ6qXIfWqnCW5nqlExJZO0PO47L-ZiaE8jIk0=",
+    "college_name": "STU Medical College",
+    "admission_dates": ["2023-08-25", "2023-09-30", "2023-11-05"],
+    "events": ["Medical Symposium", "Healthcare Camp", "Research Conference"],
+    "research_history": {
+      "founded_year": 1972,
+      "research_areas": ["Medicine", "Biology", "Pharmacology"],
+      "number_of_researches": 300
+    },
+    "sports": ["Swimming", "Volleyball", "Tennis"],
+    "college_rating": 4.4
+  }
+]
