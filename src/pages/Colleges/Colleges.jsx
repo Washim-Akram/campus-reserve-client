@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 
 const Colleges = () => {
@@ -5,10 +6,13 @@ const Colleges = () => {
 
   return (
     <div className="container mx-auto my-20 md:my-40 p-5 md:p-10">
+      <Helmet>
+        <title>Campus Reserve | Colleges</title>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-        {colleges.map((college, index) => (
+        {colleges.map((college) => (
           <div
-            key={index}
+            key={college?._id}
             className="card card-compact w-full md:w-96 bg-base-100 shadow-xl"
           >
             <figure>

@@ -4,7 +4,7 @@ const College = () => {
   const [colleges, setColleges] = useState([]);
 
   useEffect(() => {
-    fetch("./colleges.json")
+    fetch("https://campus-reserve.vercel.app/classes")
       .then((res) => res.json())
       .then((data) => setColleges(data));
   }, []);
@@ -12,9 +12,9 @@ const College = () => {
   return (
     <div className="container mx-auto my-20 md:mb-40 p-5 md:p-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-        {colleges.slice(0, 3).map((college, index) => (
+        {colleges.slice(0, 3).map((college) => (
           <div
-            key={index}
+            key={college?._id}
             className="card card-compact w-full md:w-96 bg-base-100 shadow-xl"
           >
             <figure>
